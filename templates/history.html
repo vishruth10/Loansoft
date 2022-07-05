@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="shadow border rounded p-4 bg-light">
+  {% if history_list %}
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th scope="col">User_Name</th>
+          <th scope="col">E_M_I</th>
+          <th scope="col">Loan_Left</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for file in history_list %}
+          <tr>
+            <td>{{ file.username }}</td>
+            <td>{{ file.hemi }}</td>
+            <td>{{ file.loan_left }}</td>
+            <td>{{ file.date }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+    </table> 
+  </div>
+  {% else %}
+    <div class="fs-4">There is no History</div>
+  {% endif %}
+ <div>
+{% endblock %}

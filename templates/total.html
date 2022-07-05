@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Department</th>
+        <th scope="col">Savings</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td scope="col">CS</td>
+        <td scope="col">{{CS}}</td>
+    </tr>
+    <tr>
+        <td scope="col">IS</td>
+        <td scope="col">{{IS}}</td>
+    </tr>
+    <tr>
+        <td scope="col">EC</td>
+        <td scope="col">{{EC}}</td>
+    </tr>
+    <tr>
+        <td scope="col">Civil</td>
+        <td scope="col">{{Civil}}</td>
+    </tr>
+    <tr>
+        <td scope="col">NTD</td>
+        <td scope="col">{{NTD}}</td>
+    </tr>
+    <tr>
+        <td scope="col">MECH</td>
+        <td scope="col">{{MECH}}</td>
+    </tr>
+    <tr>
+        <td scope="col">MATHS</td>
+        <td scope="col">{{MATHS}}</td>
+    </tr>
+    <tr>
+        <td scope="col">PHYSICS</td>
+        <td scope="col">{{PHYSICS}}</td>
+    </tr>
+    <tr>
+        <td scope="col">CHEMISTRY</td>
+        <td scope="col">{{CHEMISTRY}}</td>
+    </tr>
+    <tr>
+        <td scope="col">LIBRARY</td>
+        <td scope="col">{{LIBRARY}}</td>
+    </tr>
+    <tr>
+        <td scope="col">Total</td>
+        <td scope="col">{{total}}</td>
+    </tr>
+    </tbody>
+  </table> 
+</div>
+{% endblock %}

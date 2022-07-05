@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    ul{
+        list-style-type: none;
+    }
+</style>
+	<form class="shadow border rounded p-4 bg-light" method = "post" action="{% url 'take_loan' %}">
+        <div class="fs-3">Apply for loan</div>
+        <br>
+        {% if  form.errors  %}
+            <div class="text-danger">Please Enter Valid Information</div>
+        {% endif %}
+		{% csrf_token %}
+        <div class="mb-3">
+            <label for="name">User Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{name}}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="dept">Department</label>
+            <input type="text" class="form-control" id="dept" name="dept" value="{{dept}}" readonly>
+        </div>
+        <div class="mb-3">
+            <label for="loan">Amount</label>
+            <input type="number" class="form-control" id="loan" name="loan" value="{{loan}}" readonly>
+        </div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+{% endblock %}

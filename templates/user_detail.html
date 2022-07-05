@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <div class="shadow border rounded p-4 bg-light">
+  <div class="fs-3">{{file.username}}</div>
+  <hr>
+  <div class="table-responsive">
+    <table class="table table-sm">
+      <tbody>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>{{ file.name }}</td>
+          </tr>
+          <tr>
+            <td><strong>Phone number</strong></td>
+            <td>{{ file.phone }}</td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td> {{ file.email_id }}</td>
+          </tr>
+          <tr>
+            <td><strong>Address</strong></td>
+            <td>{{ file.address }}</td>
+          </tr>
+          <tr>
+            <td><strong>Aadhar Number</strong></td>
+            <td>{{file.aadhar_number}}</td>
+          </tr>
+          <tr>
+            <td><strong>Pan Card Number</strong></td>
+            <td>{{file.pan_card_number}}</td>
+          </tr>
+          <tr>
+            <td><strong>Department</strong></td>
+            <td>{{file.department}}</td>
+          </tr>
+          <tr>
+            <td><strong>Gender</strong></td>
+            <td>{{file.gender}}</td>
+          </tr>
+          <tr>
+            <td><strong>Shared Amount</strong></td>
+            <td>{{file.shared_amount}}</td>
+          </tr>
+          <tr>
+            <td><strong>Savings</strong></td>
+            <td>{{file.savings}}</td>
+          </tr>
+          <tr>
+            <td><strong>Loan Balance</strong></td>
+            <td>{{file.loan_balance}}</td>
+          </tr>
+          <tr>
+            <td><strong>E_M_I</strong></td>
+            <td>{{file.emi}}</td>
+          </tr>
+          <tr>
+            <td><strong>Loan Left</strong></td>
+            <td>{{file.loan_left}}</td>
+          </tr>
+      </tbody>
+    </table> 
+  </div>
+</div>
+{% endblock %}

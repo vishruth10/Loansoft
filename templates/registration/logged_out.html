@@ -1,0 +1,5 @@
+{% extends "app/base.html" %}
+{% block content %}
+  <p>Logged out!</p>
+  <a href="{% url 'login'%}?next=/path_to_the_page">Click here to login again.</a>
+{% endblock %}
