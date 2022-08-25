@@ -2,11 +2,7 @@ from django.urls import path
 from . import views
 from django.contrib import admin
 
-from django.views.static import serve
-from django.conf.urls import url
-
-
-urlpatterns= [
+urlpatterns = [
     path('', views.index, name='index'),
     path('search',views.search,name='search'),
     path('success',views.success,name="success"),
@@ -20,6 +16,4 @@ urlpatterns= [
     path('update_loan',views.update_loan,name="update_loan"),
     path('total',views.total,name="total"),
     # path('history_user',views.history_user,name="history_user"),
-    path url(r '^media/(?P<path>.*)$', serve,{'document_root':settings.MEDIA_ROOT}), 
-    path url(r '^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
