@@ -15,11 +15,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from account.forms import *
 from django.contrib.auth import logout,authenticate,login
+from django.views.decorators.csrf import csrf_exempt
 def index(request):
     return render(
         request,'index.html'
     )
 @login_required
+@csrf_exempt
 def search(request):
     if not request.user.is_superuser:
         return HttpResponse("<h1>Permission denied!!</h1>")
