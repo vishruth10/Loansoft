@@ -11,9 +11,9 @@
   {% endif %}
 
   <form method="post" action="{% url 'login' %}" class="container shadow p-3 mb-5 border rounded p-4 bg-light">
+    {% csrf_token %}
     <span class="fs-3">Login</span>
     <hr>
-    {% csrf_token %}
     {% if form.errors %}
       <div class="text-danger">Your username and password didn't match. Please try again.</div>
     {% endif %}
