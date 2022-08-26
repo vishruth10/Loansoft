@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-from django.views.decorators.csrf import csrf_exempt
+#from django.views.decorators.csrf import csrf_exempt
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@^8mr&i%+n@g(%x67d1ry*%929yvveyf$1_5$vt2w6f=hl*qnp'
+#SECRET_KEY = 'django-insecure-@^8mr&i%+n@g(%x67d1ry*%929yvveyf$1_5$vt2w6f=hl*qnp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*","localhost","loansoftmit.herokuapp.com","chrome-extension://nmmhkkegccagdldgiimedpiccmgmieda"]
+ALLOWED_HOSTS = ["*","localhost","loansoftmit.herokuapp.com","chrome-extension://ghbmnnjooekpmoecnnnilnnbdlolhkhi"]
 
 
 # Application definition
