@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@^8mr&i%+n@g(%x67d1ry*%929yvveyf$1_5$vt2w6f=hl*qnp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["localhost","loansoftmit.herokuapp.com","chrome-extension://nmmhkkegccagdldgiimedpiccmgmieda"]
+ALLOWED_HOSTS = ["*","localhost","loansoftmit.herokuapp.com","chrome-extension://nmmhkkegccagdldgiimedpiccmgmieda"]
 
 
 # Application definition
